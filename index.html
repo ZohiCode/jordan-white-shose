@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan Stealth | 3D Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;0,900;1,900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+        background-color: #f0f2f5;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .font-kanit { font-family: 'Kanit', sans-serif; }
+      ::-webkit-scrollbar { display: none; }
+      
+      /* Glassmorphism utility */
+      .glass {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root" class="w-full h-full"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
